@@ -1,0 +1,139 @@
+body {
+  font-family: 'Hind', sans-serif;
+  font-size: 16px;
+
+  background-color: #F8F9FB;
+
+  background-image: url('./images/bg2.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.root.container {
+  max-width: 960px;
+}
+
+header {
+  height: 250px;
+}
+
+header .header-pooh {
+  height: 100%;
+  background-image: url('./images/hitch.png');
+  background-size: 320px;
+  background-repeat: no-repeat;
+  background-position: center 18px;
+}
+
+h1, h2, h3 {
+  font-family: 'Pooh';
+}
+
+.header-title {
+	color:#000000;
+  font-size: 4.5rem;
+}
+
+h1 + .description {
+	color:#000000;
+  font-size: 2.8rem;
+}
+
+h2 {
+  margin-top: 1.8rem;
+  margin-bottom: 1rem;
+
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+nav .list-group-item {
+  padding: 0.75rem;
+  padding-bottom: 0.5rem;
+}
+
+main {
+  min-height: 500px !important;
+
+  padding: 2rem !important;
+
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.lectures-table .date-column {
+  min-width: 100px;
+}
+
+.calendar {
+  width: 100%;
+}
+
+.person {
+  position: relative;
+
+  width: 200px;
+  height: 250px;
+
+  margin-bottom: 1.5rem;
+
+  border: 1px solid #eee;
+  border-radius: 6px;
+
+  overflow: hidden;
+}
+
+.character, .normal {
+  min-height: 100%;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.character {
+  background-color: white;
+}
+
+.character:hover, .character:active {
+  opacity: 0;
+}
+
+footer {
+  text-align: center;
+}
+
+.footer-text {
+  padding: 0.5rem 0;
+}
+
+/* xs */
+@media (max-width: 544px) {
+  header {
+    height: 220px;
+  }
+
+  .header-title {
+    margin-top: 0 !important;
+  }
+
+  nav {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  nav .list-group-item {
+    border-radius: 0 !important;
+  }
+
+  main {
+    border-radius: 0;
+  }
+}
